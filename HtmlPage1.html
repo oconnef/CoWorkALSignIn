@@ -25,13 +25,15 @@
             var email = $('#Email').val();
             var name = $('#Name').val();
             var reason = $('#Reason').val();
+            var facebookId = "222222222";
 
             $.ajax({
                 url: "https://docs.google.com/forms/d/1B8ZwPYUPwSFFfwmtzfg-rPzRo9Oq9XhhYG0hvhT2qO8/formResponse",
                 data: {
                     "entry.1171484149": name,
                     "entry.321317488": email,
-                    "entry.1305901900": reason
+                    "entry.1305901900": reason,
+                    "entry.289977332": facebookId
                 },
                 type: "POST",
                 dataType: "xml",
@@ -87,134 +89,6 @@
             $('#Email').val('test@yahoo.com');
         }
     </script>
-
-    
-
-
-
-
-    <!--<form action="https://docs.google.com/forms/d/1B8ZwPYUPwSFFfwmtzfg-rPzRo9Oq9XhhYG0hvhT2qO8/formResponse" target="_self" method="POST" id="mG61Hd">
-
-            <div class="freebirdFormviewerViewHeaderHeader">
-                <div class="freebirdFormviewerViewHeaderTitleRow">
-                    <div class="freebirdFormviewerViewHeaderTitle" dir="auto">
-                        Sign in to Co-Work Night
-                    </div>
-                </div>
-                <div class="freebirdFormviewerViewHeaderDescription" dir="auto">Please sign in to help us watch over you big bro style.</div>
-
-                <div class="freebirdFormviewerViewHeaderRequiredLegend" aria-hidden="true" dir="auto">* Required</div>
-            </div>
-
-            <div class="freebirdFormviewerViewItemList" role="list">
-                <div role="listitem" class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem" jsname="ibnC6b" jscontroller="rDGJeb"
-                     jsaction="sPvj8e:e4JwSe,vwKRrd;" data-required="true" data-input="L9xHkb" data-item-id="461053211">
-                    <div class="freebirdFormviewerViewItemsItemItemheader">
-                        <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                            <div class="freebirdFormviewerViewItemsItemItemTitle" dir="auto">
-                                Name
-                                <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-hidden="true">*</span>
-                            </div>
-                        </div>
-                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.461053211" dir="auto"></div>
-                    </div>
-                    <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jscontroller="pxq3x"
-                         jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow="" jsname="W85ice">
-                        <div class="quantumWizTextinputPaperinputMainContent exportContent">
-                            <div class="quantumWizTextinputPaperinputContentArea">
-
-                                <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0"
-                                       aria-label="Name" aria-describedby="i.desc.461053211 i.err.461053211"
-                                       name="Sign in to Co-Work Night" value="" required="" dir="auto" data-initial-dir="auto"
-                                       data-initial-value="">
-
-                                <div jsname="LwH6nd" class="quantumWizTextinputPaperinputPlaceholder exportLabel">Your answer</div>
-                                <div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div>
-                                <div jsname="XmnwAc" class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                <input type="hidden" name="entry.1171484149" jsname="L9xHkb">
-
-                <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage" id="i.err.461053211" role="alert"></div>
-                </div>
-
-
-            <div role="listitem" class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem" jsname="ibnC6b" jscontroller="rDGJeb"
-                 jsaction="sPvj8e:e4JwSe,vwKRrd;" data-required="true" data-input="L9xHkb" data-item-id="1286860732">
-                <div class="freebirdFormviewerViewItemsItemItemheader">
-                <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                    <div class="freebirdFormviewerViewItemsItemItemTitle" dir="auto">Email
-                    <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-hidden="true">*</span></div></div>
-                <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1286860732" dir="auto"></div></div>
-                <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jscontroller="pxq3x"
-                     jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow="" jsname="W85ice">
-                <div class="quantumWizTextinputPaperinputMainContent exportContent"><div class="quantumWizTextinputPaperinputContentArea">
-
-
-                    <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email"
-                           aria-describedby="i.desc.1286860732 i.err.1286860732" name="Sign in to Co-Work Night" value="" required="" dir="auto" data-initial-dir="auto"
-                           data-initial-value="">
-
-                    <div jsname="LwH6nd" class="quantumWizTextinputPaperinputPlaceholder exportLabel">Your answer</div>
-                    <div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div>
-
-                    <div jsname="XmnwAc" class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div></div></div></div>
-                <input type="hidden" name="entry.321317488" jsname="L9xHkb">
-                <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage" id="i.err.1286860732" role="alert"></div></div>
-
-            <div role="listitem" class="freebirdFormviewerViewItemsItemItem" jsname="ibnC6b" jscontroller="jmDACb" jsaction="JIbuQc:aj0Jcf,vwKRrd;"
-                 data-input="L9xHkb" data-item-id="1894333788"><div class="freebirdFormviewerViewItemsItemItemheader">
-                <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                <div class="freebirdFormviewerViewItemsItemItemTitle" dir="auto">I am most interested in...</div></div>
-                <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1894333788" dir="auto"></div></div>
-                <div role="listbox" class="docssharedWizSelectPaperselectEl" jscontroller="EbrJ1c"
-                     jsaction="click:cOuCgd; keydown:I481le; keypress:Kr2w4b; mousedown:UX7yZ; mouseup:lbsD7e; mouseleave:JywGue; touchstart:p6p2H;
-                     touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true); touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e" jsshadow="" jsname="W85ice"
-                     aria-label="I am most interested in..." aria-describedby="i.desc.1894333788 i.err.1894333788">
-                <div class="docssharedWizSelectPaperselectOptionList" jsname="d9BH4c" role="presentation">
-                    <div class="docssharedWizSelectPaperselectOption isSelected isPlaceholder" jsname="wQNmvb" data-value="" aria-selected="true"
-                         aria-label="Choose" role="option" tabindex="0"><div class="docssharedWizSelectPaperselectRipple" jsname="ksKsZd"></div>
-
-                    <content class="docssharedWizSelectPaperselectContent">Choose</content>
-                    </div><div class="docssharedWizSelectPaperselectOptionSeparator" role="separator"></div>
-                    <div class="docssharedWizSelectPaperselectOption" jsname="wQNmvb" data-value="Thomas Galluci's learn to code" aria-hidden="true"
-                         aria-label="Thomas Galluci's learn to code" role="option" tabindex="-1"><div class="docssharedWizSelectPaperselectRipple" jsname="ksKsZd"></div>
-                    <content class="docssharedWizSelectPaperselectContent">Thomas Galluci's learn to code</content>
-
-                    </div><div class="docssharedWizSelectPaperselectOption" jsname="wQNmvb" data-value="Tom O'Connell" aria-hidden="true" aria-label="Tom O'Connell"
-                               role="option" tabindex="-1"><div class="docssharedWizSelectPaperselectRipple" jsname="ksKsZd"></div>
-                    <content class="docssharedWizSelectPaperselectContent">Tom O'Connell</content>
-                    </div>
-
-                    <div class="docssharedWizSelectPaperselectOption" jsname="wQNmvb" data-value="I'm just here for beer, etc." aria-hidden="true"
-                         aria-label="I'm just here for beer, etc." role="option" tabindex="-1"><div class="docssharedWizSelectPaperselectRipple" jsname="ksKsZd"></div>
-                    <content class="docssharedWizSelectPaperselectContent">I'm just here for beer, etc.</content></div>
-
-                    <div class="docssharedWizSelectPaperselectOption" jsname="wQNmvb" data-value="Option 4" aria-hidden="true" aria-label="Option 4" role="option"
-                         tabindex="-1"><div class="docssharedWizSelectPaperselectRipple" jsname="ksKsZd"></div>
-                    <content class="docssharedWizSelectPaperselectContent">Option 4</content></div></div>
-
-
-                <div class="docssharedWizSelectPaperselectDropDown"></div>
-                <div class="docssharedWizSelectPaperselectPopup" jsaction="click:dPTK6c(wQNmvb); mousedown:uYU8jb(wQNmvb); mouseup:LVEdXd(wQNmvb);
-                     mouseover:nfXz1e(wQNmvb); touchstart:Rh2fre(wQNmvb); touchend:MkF9r(wQNmvb|preventMouseEvents=true)"
-                     role="presentation" jsname="V68bde" style="display:none"></div></div>
-
-                <input type="hidden" name="entry.1305901900" jsname="L9xHkb">
-
-        <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage" id="i.err.1894333788" role="alert"></div></div>
-            </div>
-        <div class="freebirdFormviewerViewNavigationNavControls" jscontroller="lSvzH" jsaction="rcuQ6b:npT2md;JIbuQc:V3upec(GeGHKb),HiUbje(M2UYVd),NPBnCf(OCpkoe)"
-             data-shuffle-seed="3057165036310350714">
-        <div class="freebirdFormviewerViewNavigationButtonsAndProgress">
-            <div class="freebirdFormviewerViewNavigationButtons">
-            <div role="button" class="quantumWizButtonPaperbuttonEl quantumWizButtonPaperbuttonFlat quantumWizButtonPaperbuttonDark quantumWizButtonPaperbutton2El2 freebirdFormviewerViewNavigationSubmitButton" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jsshadow="" jsname="M2UYVd" tabindex="0"><div class="quantumWizButtonPaperbuttonRipple exportInk" jsname="ksKsZd"></div><div class="quantumWizButtonPaperbuttonFocusOverlay"></div><content class="quantumWizButtonPaperbuttonContent"><span class="quantumWizButtonPaperbuttonLabel">Submit</span></content></div></div></div><div class="freebirdFormviewerViewNavigationPasswordWarning">Never submit passwords through Google Forms.</div></div><input type="hidden" name="fvv" value="1"><input type="hidden" name="draftResponse" value="[,,&quot;3057165036310350714&quot;]
-    "><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="3057165036310350714">
-
-        </form>-->
 
 </body>
 </html>
